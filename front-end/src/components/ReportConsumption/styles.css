@@ -1,0 +1,56 @@
+.left {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url('../../assets/background.jpg') center/cover no-repeat;
+}
+
+.container-consumption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 400px;
+    width: 400px;
+    padding: 15px;
+    border-radius: 7%;
+
+    background-color: rgba(110, 105, 105, 0.7);
+}
+
+.container-consumption span {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container-consumption h2 {
+    margin-top: 15px;
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container-consumption input {
+    all: unset;
+    height: 32px;
+    width: 370px;
+    margin-top: 6px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.container-consumption button {
+    all: unset;
+    height: 32px;
+    width: 370px;
+
+    text-align: center;
+
+    margin-top: 26px;
+
+    background-color: #00DF7C;
+}
