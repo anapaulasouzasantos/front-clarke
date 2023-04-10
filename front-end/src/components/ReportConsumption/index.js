@@ -27,7 +27,11 @@ const ReportConsumption = () => {
         }
 
         try {
-            const response = await api.put('/fornecedores', dataSend);
+            const response = await api.put('/fornecedores', dataSend, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            });
 
             setSuplier(response.data)
             setShowTable(true);
