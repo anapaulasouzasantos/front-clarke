@@ -24,7 +24,8 @@ const SupplierCompanies = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {supplier.map((item) => (
+
+                                {supplier.length && supplier.map((item) => (
                                     <tr key={item.id}>
                                         <td>{item.nome}</td>
                                         <td>{item.uf}</td>

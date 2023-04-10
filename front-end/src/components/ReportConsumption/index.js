@@ -28,6 +28,7 @@ const ReportConsumption = () => {
 
         try {
             const response = await api.get(`/fornecedores?consumption=${consumption}`);
+            console.log(response)
 
             setSuplier(response.data)
             setShowTable(true);
