@@ -6,7 +6,7 @@ const ReportConsumption = () => {
 
     const { consumption,
         setConsumption,
-        setSuplier,
+        setSupplier,
         setShowTable } = useConsumption()
 
 
@@ -30,7 +30,7 @@ const ReportConsumption = () => {
             const response = await api.get(`/fornecedores?consumption=${consumption}`);
             console.log(response)
 
-            setSuplier(response.data)
+            setSupplier(response.data)
             setShowTable(true);
         } catch (error) {
             console.log(error)

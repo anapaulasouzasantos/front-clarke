@@ -2,14 +2,14 @@ import { useState } from 'react';
 
 const useConsumptionProvider = () => {
     const [consumption, setConsumption] = useState('');
-    const [supplier, setSuplier] = useState([]);
+    const [supplier, setSupplier] = useState([]);
     const [showTable, setShowTable] = useState(false);
 
     return {
         consumption,
         setConsumption,
         supplier,
-        setSuplier,
+        setSupplier,
         showTable,
         setShowTable
     }
