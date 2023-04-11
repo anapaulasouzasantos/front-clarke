@@ -22,13 +22,8 @@ const ReportConsumption = () => {
             alert('Informar apenas numeros')
         }
 
-        const dataSend = {
-            consumption: consumption
-        }
-
         try {
             const response = await api.get(`/fornecedores?consumption=${consumption}`);
-            console.log(response)
 
             setSupplier(response.data)
             setShowTable(true);
