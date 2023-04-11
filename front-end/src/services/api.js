@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: `${process.env.BASE_URL}`,
+    baseURL: 'https://api-clarke.vercel.app',
     timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
